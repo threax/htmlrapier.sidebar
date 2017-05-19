@@ -1,0 +1,13 @@
+{
+  "name": "htmlrapier.sidebar",
+  "version": "5.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^6.0.69"
+  },
+  "dependencies": {
+    "jsns": "^4.2.2",
+    "htmlrapier": "^5.1.0",
+    "bootstrap": "~3.3.6"
+  }
+}

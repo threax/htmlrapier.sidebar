@@ -1,0 +1,54 @@
+@menuHoverColor: rgb(208, 208, 208);
+@menuFolderColor: rgb(80, 80, 80);
+@menuLinkColor: #337ab7;
+
+.sidebarMenu {
+    margin: 0px;
+    padding: 0px;
+
+    .folder {
+        margin: 0px;
+        color: @menuFolderColor;
+    }
+
+    .link {
+        > a{
+            color: @menuLinkColor;
+            display:block;
+            padding: 8px 4px 10px 4px;
+            margin: 0px;
+        }
+    }
+
+    .currentLink,
+    .currentFolder{
+        font-weight:bold;
+    }
+
+    .link:hover{
+        background-color: @menuHoverColor;
+    }
+
+    .folder {
+        .children {
+            margin-left:25px;
+        }
+
+        .item {
+            cursor:pointer;
+            padding: 8px 4px 10px 4px;
+        }
+
+        .item:hover {
+            background-color: @menuHoverColor;
+        }
+    }
+}
+
+ul.sidebarMenu {
+    list-style-type: none;
+
+    span {
+        cursor: pointer;
+    }
+}
