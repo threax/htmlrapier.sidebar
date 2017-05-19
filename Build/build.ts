@@ -8,6 +8,9 @@ var less = require('threax-npm-tk/less');
 
 var filesDir = __dirname + "/..";
 
+/**
+ * Build the sidebar less, it will go into the folder you provide.
+ */
 export function build(outDir, moduleDir): Promise<any> {
     var promises = [];
 
@@ -15,7 +18,7 @@ export function build(outDir, moduleDir): Promise<any> {
         encoding: 'utf8',
         importPaths: [filesDir, moduleDir + '/bootstrap/less'],
         input: filesDir + '/css/**/*.less',
-        basePath: filesDir + '/css',
+        basePath: filesDir,
         out: outDir,
         compress: true,
     }));
