@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "hr.sidebar.*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src\\**\\*.ts"
+  ]
+}
