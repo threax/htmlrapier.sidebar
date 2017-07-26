@@ -1,0 +1,10 @@
+{
+  "outDir": "lib/sidebar",
+  "less": [
+    {
+      "importPaths": [ "css", "../bootstrap/less" ],
+      "input": "css/**/*.less",
+      "compress": true
+    }
+  ]
+}
