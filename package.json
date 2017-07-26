@@ -1,12 +1,17 @@
 {
   "name": "htmlrapier.sidebar",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": false,
   "devDependencies": {
     "@types/node": "^6.0.69"
   },
   "dependencies": {
-    "htmlrapier": ">=5.1.6",
+    "htmlrapier": ">=10.0.0",
     "bootstrap": "~3.3.6"
-  }
+  },
+  "files":[
+    "css/**/*",
+    "tsimport.json",
+    "artifacts.json"
+  ]
 }
