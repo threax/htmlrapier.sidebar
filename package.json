@@ -1,6 +1,6 @@
 {
   "name": "htmlrapier.sidebar",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": false,
   "devDependencies": {
     "@types/node": "^6.0.69"
@@ -10,7 +10,8 @@
     "bootstrap": "^3.3.6"
   },
   "files":[
-    "*/**/*",
+    "css/**/*",
+    "src/**/*",
     "tsimport.json",
     "artifacts.json"
   ]
