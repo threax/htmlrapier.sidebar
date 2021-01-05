@@ -9,7 +9,7 @@
     "htmlrapier": ">=10.0.0",
     "bootstrap": "^3.3.6"
   },
-  "files":[
+  "files": [
     "css/**/*",
     "src/**/*",
     "tsimport.json",

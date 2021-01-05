@@ -1,9 +1,9 @@
 {
   "outDir": "lib/sidebar",
-  "less": [
+  "sass": [
     {
-      "importPaths": [ "css", "../bootstrap/less" ],
-      "input": "css/**/*.less",
+      "importPaths": [ "css", "../bootstrap/scss" ],
+      "input": "css/**/*.scss",
       "compress": true
     }
   ]

@@ -1,6 +1,6 @@
-@menuHoverColor: rgb(208, 208, 208);
-@menuFolderColor: rgb(80, 80, 80);
-@menuLinkColor: #337ab7;
+$menuHoverColor: rgb(208, 208, 208);
+$menuFolderColor: rgb(80, 80, 80);
+$menuLinkColor: #337ab7;
 
 .sidebarMenu {
     margin: 0px;
@@ -8,12 +8,12 @@
 
     .folder {
         margin: 0px;
-        color: @menuFolderColor;
+        color: $menuFolderColor;
     }
 
     .link {
         .mainBlock {
-            color: @menuLinkColor;
+            color: $menuLinkColor;
             display: block;
             padding: 8px 4px 10px 4px;
             margin: 0px;
@@ -26,7 +26,7 @@
     }
 
     .link:hover {
-        background-color: @menuHoverColor;
+        background-color: $menuHoverColor;
     }
 
     .folder {
@@ -40,7 +40,7 @@
         }
 
         .item:hover {
-            background-color: @menuHoverColor;
+            background-color: $menuHoverColor;
         }
     }
 }
