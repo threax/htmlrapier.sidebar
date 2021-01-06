@@ -1,6 +1,6 @@
-$menuHoverColor: rgb(208, 208, 208);
-$menuFolderColor: rgb(80, 80, 80);
-$menuLinkColor: #337ab7;
+$menuHoverColor: $dropdown-link-hover-bg !default;
+$menuFolderColor: $body-color !default;
+$menuLinkColor: $link-color !default;
 
 .sidebarMenu {
     margin: 0px;

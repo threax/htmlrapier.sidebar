@@ -1,6 +1,6 @@
 {
   "name": "htmlrapier.sidebar",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "private": false,
   "devDependencies": {
     "@types/node": "^6.0.69"
