@@ -4,151 +4,27 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-$sidebar-bg: $body-bg !default;
-$sidebar-box-shadow: $box-shadow !default;
-$sidebar-link-color: $link-color !default;
-$sidebar-link-hover-color: $link-hover-color !default;
 $sidebar-width: 300px !default;
 
-body {
-    overflow-x: hidden;
-}
-
-/* Toggle Styles */
-
 #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    display: flex;
+    align-items: stretch;
 }
 
-#wrapper.toggled {
-    padding-left: $sidebar-width;
+#sidebar {
+    min-width: $sidebar-width;
+    max-width: $sidebar-width;
 }
 
-#sidebar-wrapper {
-    z-index: 500;
-    position: fixed;
-    left: $sidebar-width;
-    width: 0;
-    height: 100%;
+#sidebar.toggled {
     margin-left: -$sidebar-width;
-    overflow-y: auto;
-    background: $sidebar-bg;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    box-shadow: $sidebar-box-shadow;
 }
 
-#wrapper.toggled #sidebar-wrapper {
-    width: $sidebar-width;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -$sidebar-width;
-}
-
-/* Sidebar Styles */
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: $sidebar-width;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.sidebar-nav li {
-    line-height: 1.8em;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: $sidebar-link-color;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: $sidebar-link-color;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: $sidebar-link-hover-color;
-    background: none;
-}
-
-.sidebar-nav > .sidebar-logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.pageTools {
-    margin: 6px;
-    padding-top: 1em;
-}
-
-.mainTreeMenu {
-    margin: 6px;
-    padding-top: 0.5em;
-}
-
-@media(min-width:1250px) {
-    #wrapper {
-        padding-left: $sidebar-width;
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -$sidebar-width;
     }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: $sidebar-width;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-        overflow-y: hidden;
-    }
-
-    #page-content-wrapper {
-        position: relative;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
+    #sidebar.toggled {
+        margin-left: 0;
     }
 }
