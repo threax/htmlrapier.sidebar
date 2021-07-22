@@ -1,4 +1,4 @@
-import * as domQuery from 'hr.domquery';
+import * as domQuery from 'htmlrapier/src/domquery';
 
 /**
  * This class toggles bootstrap sidebars when an element has a data-toggle="sidebar" attribute on 
